@@ -16,7 +16,7 @@ export function initState (vm) {
   }
 }
 
-function observe (data) {
+export function observe (data) {
   if (typeof data !== 'object' || data == null) {
     return
   }
