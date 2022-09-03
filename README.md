@@ -1,1 +1,2 @@
-# mini-vue2
+# vue2-source
+mini-vue2
