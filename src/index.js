@@ -11,7 +11,6 @@ let vm = new Vue({
     }
   },
   computed: {
-
   },
   watch: {}
 })
