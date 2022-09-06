@@ -21,7 +21,6 @@ methods.forEach(method => {
         inserteValue = arg.slice(2)
     }
     observeInserte(inserteValue)
-    console.log('修改数组的方法')
     return res
   }
 })
