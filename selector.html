@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    [class~="val"] {
+      height: 100px;
+      width: 100px;
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="val"></div>
+  <div class=" val "></div>
+  <div class="box value"></div>
+  <script type="text/javascript">
+    function fn () {
+      let a = 0
+      let b = 1
+      return function () {
+        console.log(a, b)
+        return a
+      }
+    }
+    function fn2 () {
+      let a = 0
+      let b = 1
+      return function () {
+        console.log(a)
+        return a
+      }
+    }
+    var res = fn()
+    var res2 = fn2()
+    console.log(res(), res2())
+  </script>
+</body>
+</html>

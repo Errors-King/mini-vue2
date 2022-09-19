@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .father {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      border-radius: 15px;
+      position: relative;
+    }
+    .father:hover {
+      box-shadow: 0 0 10px 10px #ddd;
+    }
+    .father::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .father::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      margin: auto;
+      border: 1px solid #fff;
+    }
+    .box1 div:nth-child(3n) {
+      color: red;
+    }
+    .box1 div:first-child {
+      color: skyblue;
+    }
+    .box1 div:first-child + div {
+      color: pink;
+    }
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-color: red;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="father" onclick="f(Math.random(), Math.random())">
+  </div>
+
+  <div class="box1">
+    <div class="box2">1</div>
+    <div class="box3">2</div>
+    <div class="box4">3</div>
+    <div class="box5">4</div>
+    <div class="box6">5</div>
+    <div class="box7">6</div>
+    <div class="box8">7</div>
+    <div class="box9">8</div>
+    <div class="box">9</div>
+    <div class="box3">10</div>
+  </div>
+  <img src="https://www.baidu.com/img/flexible/logo/pc/result.png" alt="">
+  <img src="https://www.baidu.com/img/flexible/logo/pc/result.png" alt="">
+  <img src="https://www.baidu.com/img/flexible/logo/pc/result.png" alt="">
+  <script src="./experence.js"></script>
+  <script type="text/javascript">
+
+  </script>
+</body>
+</html>
